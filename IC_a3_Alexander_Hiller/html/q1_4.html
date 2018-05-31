@@ -1,0 +1,191 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>q1_4</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-05-20"><meta name="DC.source" content="q1_4.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Coefficients</a></li><li><a href="#3">Values of s with pole substituted in</a></li><li><a href="#4">Characteristic Equation (CE) with pole inserted</a></li><li><a href="#5">Solve Equations</a></li></ul></div><pre class="codeinput">clear <span class="string">all</span>
+close <span class="string">all</span>
+clc
+</pre><h2 id="2">Coefficients</h2><pre class="codeinput">pl = -0.5+(sqrt(2)/8)*i;
+
+T = 0.25;
+m = 850;
+b =85;
+zd = -0.1;
+syms <span class="string">pd</span> <span class="string">K</span>
+
+a4 = (T/2)
+a3 = (1+T*b/(2*m)-T*pd/2)
+a2 = b/m -pd - T*b*pd/(m*2)
+a1 = b*K/m - b*pd/m
+a0 = -b*K/m
+</pre><pre class="codeoutput">
+a4 =
+
+    0.1250
+
+ 
+a3 =
+ 
+81/80 - pd/8
+ 
+ 
+a2 =
+ 
+1/10 - (81*pd)/80
+ 
+ 
+a1 =
+ 
+K/10 - pd/10
+ 
+ 
+a0 =
+ 
+-K/10
+ 
+</pre><h2 id="3">Values of s with pole substituted in</h2><pre class="codeinput">s = pl
+s2 = pl*pl
+s3 = pl*pl*pl
+s4 = pl*pl*pl*pl
+</pre><pre class="codeoutput">
+s =
+
+  -0.5000 + 0.1768i
+
+
+s2 =
+
+   0.2188 - 0.1768i
+
+
+s3 =
+
+  -0.0781 + 0.1271i
+
+
+s4 =
+
+   0.0166 - 0.0773i
+
+</pre><h2 id="4">Characteristic Equation (CE) with pole inserted</h2><pre class="codeinput">CE = a4*s4+a3*s3+a2*s2+a1*s+a0;
+</pre><h2 id="5">Solve Equations</h2><pre class="codeinput">S = solve([imag(CE) == 0, real(CE) == 0], [K, pd]);
+disp(<span class="string">'K is:'</span>)
+S.K
+disp(<span class="string">'pd is:'</span>)
+S.pd
+</pre><pre class="codeoutput">Warning: Cannot solve symbolically. Returning a numeric approximation instead. 
+K is:
+ 
+ans =
+ 
+0.44113889600409836056761579205039
+ 
+pd is:
+ 
+ans =
+ 
+-0.75020491803278688516416537233659
+ 
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+clear all
+close all
+clc
+
+%% Coefficients
+pl = -0.5+(sqrt(2)/8)*i;
+
+T = 0.25;
+m = 850;
+b =85;
+zd = -0.1;
+syms pd K
+
+a4 = (T/2)
+a3 = (1+T*b/(2*m)-T*pd/2)
+a2 = b/m -pd - T*b*pd/(m*2)
+a1 = b*K/m - b*pd/m
+a0 = -b*K/m
+
+%% Values of s with pole substituted in
+s = pl
+s2 = pl*pl
+s3 = pl*pl*pl
+s4 = pl*pl*pl*pl
+
+%% Characteristic Equation (CE) with pole inserted
+CE = a4*s4+a3*s3+a2*s2+a1*s+a0;
+
+%% Solve Equations
+S = solve([imag(CE) == 0, real(CE) == 0], [K, pd]);
+disp('K is:')
+S.K
+disp('pd is:')
+S.pd
+
+##### SOURCE END #####
+--></body></html>

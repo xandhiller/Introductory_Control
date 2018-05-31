@@ -1,0 +1,1730 @@
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+Models from Scope4:
+System from delta-X and u
+
+XsysScope4 =
+ 
+  From input "u1" to output "y1":
+    -136.7 s^3 + 1448 s^2 - 6.71e05 s + 6.481e05
+  ------------------------------------------------
+  s^4 + 1095 s^3 + 4049 s^2 + 1.36e06 s + 1.296e06
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope4".
+Fit to estimation data: -2.841%                         
+FPE: 0.006792, MSE: 0.006665                            
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+Models from Scope6:
+System from delta-X and u
+
+XsysScope6 =
+ 
+  From input "u1" to output "y1":
+      -426.1 s^3 - 8270 s^2 - 1.565e05 s - 1.535e06
+  -----------------------------------------------------
+  s^4 + 1217 s^3 + 2.259e04 s^2 + 4.585e05 s + 4.091e06
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope6".
+Fit to estimation data: -3700%                          
+FPE: 10.35, MSE: 10.16                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -0.04108 s^3 + 0.4892 s^2 - 6.83 s + 14.4
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 2.608, MSE: 2.559                                  
+System from delta-Y and u
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+Models from Scope6:
+System from delta-X and u
+
+XsysScope6 =
+ 
+  From input "u1" to output "y1":
+      -426.1 s^3 - 8270 s^2 - 1.565e05 s - 1.535e06
+  -----------------------------------------------------
+  s^4 + 1217 s^3 + 2.259e04 s^2 + 4.585e05 s + 4.091e06
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope6".
+Fit to estimation data: -3700%                          
+FPE: 10.35, MSE: 10.16                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -0.04108 s^3 + 0.4892 s^2 - 6.83 s + 14.4
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 2.608, MSE: 2.559                                  
+System from delta-Y and u
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -0.04108 s^3 + 0.4892 s^2 - 6.83 s + 14.4
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 2.608, MSE: 2.559                                  
+stepModels
+{Undefined function or variable 'stepModels'.
+} 
+stepModels
+{Undefined function or variable 'XsysScope4'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stepModels', '/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m', 3)" style="font-weight:bold">stepModels</a> (<a href="matlab: opentoline('/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m',3,0)">line 3</a>)
+step(XsysScope4)
+} 
+stepModels
+stepModels
+stepModels
+stepModels
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+{Error: <a href="matlab: opentoline('/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m',17,17)">File: stepModels.m Line: 17 Column: 17
+</a>Unbalanced or unexpected parenthesis or bracket.
+} 
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('axes')" style="font-weight:bold">axes</a>
+Handles of type Root cannot be made the current Axes.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stepModels', '/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m', 23)" style="font-weight:bold">stepModels</a> (<a href="matlab: opentoline('/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m',23,0)">line 23</a>)
+axes([0 1.5 0 3])
+} 
+stepModels
+{Error: <a href="matlab: opentoline('/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m',23,8)">File: stepModels.m Line: 23 Column: 8
+</a>Unexpected MATLAB expression.
+} 
+stepModels
+{Error: <a href="matlab: opentoline('/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m',23,8)">File: stepModels.m Line: 23 Column: 8
+</a>Unexpected MATLAB expression.
+} 
+doc axis
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+
+ans = 
+
+  0×0 empty <a href="matlab:helpPopup matlab.graphics.GraphicsPlaceholder" style="font-weight:bold">GraphicsPlaceholder</a> array.
+
+stepModels
+stepModels
+stepModels
+stepModels
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -0.04108 s^3 + 0.4892 s^2 - 6.83 s + 14.4
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 2.608, MSE: 2.559                                  
+stepModels
+stepModels
+[Warning: Ignoring extra legend entries.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend>set_children_and_strings', '/Applications/MATLAB_R2016b.app/toolbox/matlab/scribe/legend.p', 658)" style="font-weight:bold">legend>set_children_and_strings</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/scribe/legend.p',658,0)">line 658</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend>make_legend', '/Applications/MATLAB_R2016b.app/toolbox/matlab/scribe/legend.p', 334)" style="font-weight:bold">legend>make_legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/scribe/legend.p',334,0)">line 334</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('legend', '/Applications/MATLAB_R2016b.app/toolbox/matlab/scribe/legend.p', 282)" style="font-weight:bold">legend</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2016b.app/toolbox/matlab/scribe/legend.p',282,0)">line 282</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stepModels', '/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m', 24)" style="font-weight:bold">stepModels</a> (<a href="matlab: opentoline('/Users/alexanderhiller/Documents/MATLAB/IC System Modelling/stepModels.m',24,0)">line 24</a>)] 
+stepModels
+stepModels
+stepModels
+stepModels
+doc step
+stepModels
+stepModels
+stepModels
+docs linspace
+{Undefined function or variable 'docs'.
+} 
+doc linspace
+clc
+doc csvread
+doc +=
+modelEvaluation
+modelEvaluation
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+     -0.4108 s^3 + 4.892 s^2 - 68.3 s + 144
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 260.8, MSE: 255.9                                  
+modelEvaluation
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+     -0.8216 s^3 + 9.783 s^2 - 136.6 s + 288
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 1043, MSE: 1024                                    
+modelEvaluation
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -2.054 s^3 + 24.46 s^2 - 341.5 s + 720.1
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 6519, MSE: 6398                                    
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -2.054 s^3 + 24.46 s^2 - 341.5 s + 720.1
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 6519, MSE: 6398                                    
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -0.04108 s^3 + 0.4892 s^2 - 6.83 s + 14.4
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 2.608, MSE: 2.559                                  
+modelEvaluation
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.7347 s^3 + 2.626 s^2 - 17.49 s + 1107
+  -------------------------------------------
+  s^4 + 175.8 s^3 + 4553 s^2 + 363.3 s + 9404
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 65.3%                           
+FPE: 0.1716, MSE: 0.1684                                
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+          847.5 s^3 - 2877 s^2 - 83.5 s + 5677
+  -----------------------------------------------------
+  s^4 + 4131 s^3 + 2.796e04 s^2 + 3.572e04 s + 2.786e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 38.5%                           
+FPE: 0.0216, MSE: 0.02119                               
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+        -27.06 s^3 - 104.8 s^2 - 758.3 s + 975
+  --------------------------------------------------
+  s^4 + 476.4 s^3 + 3165 s^2 + 1.322e04 s + 1.917e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: -40.14%                         
+FPE: 1.082, MSE: 1.062                                  
+System from delta-Y and u
+
+YsysScope6 =
+ 
+  From input "u1" to output "y1":
+       -15.23 s^3 + 78.41 s^2 - 108 s + 235.1
+  -------------------------------------------------
+  s^4 + 383.3 s^3 + 2389 s^2 + 1.026e04 s + 1.14e04
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope6".
+Fit to estimation data: -29.97%                         
+FPE: 0.7417, MSE: 0.7279                                
+Models from Scope8:
+System from delta-X and u
+
+XsysScope8 =
+ 
+  From input "u1" to output "y1":
+    -0.04108 s^3 + 0.4892 s^2 - 6.83 s + 14.4
+  ---------------------------------------------
+  s^4 + 17.45 s^3 + 149.8 s^2 + 536.4 s + 903.6
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope8".
+Fit to estimation data: -35.13%                         
+FPE: 2.608, MSE: 2.559                                  
+modelComparison
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope4 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope4".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope1 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope1".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            
+Models from Scope3:
+System from delta-X and u
+
+XsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2482 s^3 - 0.558 s^2 + 20.75 s + 4.466
+  --------------------------------------------
+  s^4 + 28.04 s^3 + 30.6 s^2 + 98.14 s + 11.62
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "xdataScope3".
+Fit to estimation data: 9.497%                          
+FPE: 1.335, MSE: 1.32                                   
+System from delta-Y and u
+
+YsysScope3 =
+ 
+  From input "u1" to output "y1":
+   -0.2702 s^3 + 0.8959 s^2 - 3.703 s + 7.851
+  --------------------------------------------
+  s^4 + 0.293 s^3 + 14.8 s^2 + 3.821 s + 22.16
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope3".
+Fit to estimation data: 72.31%                          
+FPE: 0.004405, MSE: 0.004353                            
+System from delta-Y and u
+
+YsysScope1 =
+ 
+  From input "u1" to output "y1":
+    -0.05038 s^3 + 0.803 s^2 - 2.077 s + 5.595
+  -----------------------------------------------
+  s^4 + 0.1202 s^3 + 14.94 s^2 + 0.1879 s + 20.71
+ 
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 4   Number of zeros: 3
+   Number of free coefficients: 8
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                                 
+Estimated using TFEST on time domain data "ydataScope1".
+Fit to estimation data: 92.07%                          
+FPE: 0.004254, MSE: 0.004203                            

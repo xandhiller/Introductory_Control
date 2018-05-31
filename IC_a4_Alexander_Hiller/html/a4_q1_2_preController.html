@@ -1,0 +1,176 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Assignment 4, q1, part 2 -- BEFORE Controller</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-05-27"><meta name="DC.source" content="a4_q1_2_preController.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Assignment 4, q1, part 2 -- BEFORE Controller</h1><!--introduction--><p>Alexander Hiller (11850637)</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Setup</a></li><li><a href="#2">Constants from the clipped non-linear graph</a></li><li><a href="#3">N(M,w) at M = 1 == N_1</a></li><li><a href="#4">point == -1/(N_1)</a></li><li><a href="#5">Show the limiting of Clipped function</a></li><li><a href="#6">Prepare the -1/N(M, w) function to plot on Nyquist plot</a></li><li><a href="#7">Nyquist Plot without controller (1+Td*s)</a></li><li><a href="#8">Pre-Controller conclusion:</a></li></ul></div><h2 id="1">Setup</h2><pre class="codeinput">clear <span class="string">all</span>
+close <span class="string">all</span>
+clc
+<span class="comment">% Variable used in N(M,w)</span>
+syms <span class="string">M</span>
+</pre><h2 id="2">Constants from the clipped non-linear graph</h2><pre class="codeinput">K = 15; <span class="comment">% Slope</span>
+S = 1;  <span class="comment">%</span>
+
+s = tf([1 0],[1]);
+Gp_tf = 0.233/((s^2 + 0.676*s + 0.233)*(1+0.4*s));
+[Gp_tf_num, Gp_tf_den] = tfdata(Gp_tf, <span class="string">'v'</span>);
+clear <span class="string">s</span>
+syms <span class="string">s</span>
+Gp_sym = poly2sym(Gp_tf_num,s)/poly2sym(Gp_tf_den,s);
+<span class="comment">% As defined in pg 163/175 of Analogue and Digital Control (Nguyen)</span>
+N = piecewise(M&lt;S, K, M&gt;=S,  K*N_0(M/S));
+assume(M&gt;0)
+M = 1;
+</pre><h2 id="3">N(M,w) at M = 1 == N_1</h2><pre class="codeinput">N_1 = K*N_0(1/S);
+</pre><h2 id="4">point == -1/(N_1)</h2><pre class="codeinput">point = -1/N_1;
+</pre><h2 id="5">Show the limiting of Clipped function</h2><pre class="codeinput">figure(1)
+fplot(N)
+hold <span class="string">on</span>
+plot(1, N_1, <span class="string">'rx'</span>);
+hold <span class="string">off</span>
+ylabel(<span class="string">'N(M,\omega)'</span>)
+xlabel(<span class="string">'M'</span>)
+</pre><img vspace="5" hspace="5" src="a4_q1_2_preController_01.png" alt=""> <h2 id="6">Prepare the -1/N(M, w) function to plot on Nyquist plot</h2><pre class="codeinput">clear <span class="string">M</span>;
+M = linspace(1, 100);
+nonLinStability = -1./(subs(N,M));
+<span class="comment">% Creating zeros because for the imag part of nonLinStability</span>
+</pre><h2 id="7">Nyquist Plot without controller (1+Td*s)</h2><pre class="codeinput">figure(2)
+nyquist(Gp_tf)
+hold <span class="string">on</span>
+plot(point, 0, <span class="string">'rx'</span>)
+plot(nonLinStability, zeros(size(nonLinStability)), <span class="string">'g'</span>)
+hold <span class="string">off</span>
+<span class="comment">% axis([-10 10 -10 10])</span>
+title(<span class="string">'Nyquist Plot without controller (1+Td*s)'</span>)
+legend(<span class="string">'Gp(s)'</span>,<span class="string">'-1/(N(M==1,\omega) == -1/15'</span>, <span class="string">'-1/N(M,\omega)'</span>)
+</pre><img vspace="5" hspace="5" src="a4_q1_2_preController_02.png" alt=""> <h2 id="8">Pre-Controller conclusion:</h2><p>We can see that the plant (Gp) will intersect our function, causing instability.</p><pre class="codeinput">save(<span class="string">'preController.mat'</span>)
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Assignment 4, q1, part 2 REPLACE_WITH_DASH_DASH BEFORE Controller 
+% Alexander Hiller (11850637)
+
+%% Setup
+clear all
+close all
+clc
+% Variable used in N(M,w)
+syms M
+
+%% Constants from the clipped non-linear graph
+K = 15; % Slope
+S = 1;  % 
+
+s = tf([1 0],[1]);
+Gp_tf = 0.233/((s^2 + 0.676*s + 0.233)*(1+0.4*s));
+[Gp_tf_num, Gp_tf_den] = tfdata(Gp_tf, 'v');
+clear s
+syms s
+Gp_sym = poly2sym(Gp_tf_num,s)/poly2sym(Gp_tf_den,s);
+% As defined in pg 163/175 of Analogue and Digital Control (Nguyen)
+N = piecewise(M<S, K, M>=S,  K*N_0(M/S));
+assume(M>0)
+M = 1;
+
+%% N(M,w) at M = 1 == N_1
+N_1 = K*N_0(1/S);
+
+%% point == -1/(N_1)
+point = -1/N_1;
+
+%% Show the limiting of Clipped function
+figure(1)
+fplot(N)
+hold on
+plot(1, N_1, 'rx');
+hold off
+ylabel('N(M,\omega)')
+xlabel('M')
+
+%% Prepare the -1/N(M, w) function to plot on Nyquist plot
+clear M;
+M = linspace(1, 100);
+nonLinStability = -1./(subs(N,M));
+% Creating zeros because for the imag part of nonLinStability
+
+%% Nyquist Plot without controller (1+Td*s)
+figure(2)
+nyquist(Gp_tf)
+hold on
+plot(point, 0, 'rx')
+plot(nonLinStability, zeros(size(nonLinStability)), 'g')
+hold off
+% axis([-10 10 -10 10])
+title('Nyquist Plot without controller (1+Td*s)')
+legend('Gp(s)','-1/(N(M==1,\omega) == -1/15', '-1/N(M,\omega)')
+
+%% Pre-Controller conclusion:
+% We can see that the plant (Gp) will intersect our function, causing instability.
+
+save('preController.mat')
+
+
+##### SOURCE END #####
+--></body></html>

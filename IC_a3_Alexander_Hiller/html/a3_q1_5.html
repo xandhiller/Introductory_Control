@@ -1,0 +1,165 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Design controller in the z-domain</title><meta name="generator" content="MATLAB 9.1"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-05-20"><meta name="DC.source" content="a3_q1_5.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Design controller in the z-domain</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Setup</a></li><li><a href="#2">Discrete System Requirement Poles</a></li><li><a href="#3">System Parameters and Plant TF</a></li><li><a href="#4">Controller Form</a></li><li><a href="#5">Insert Pole into Characteristic Equation</a></li><li><a href="#6">Solve the Real and Imaginary Equations</a></li><li><a href="#7">Solutions to controller pole and controller gain</a></li></ul></div><h2 id="1">Setup</h2><pre class="codeinput">clear <span class="string">all</span>;
+clc;
+close <span class="string">all</span>;
+syms <span class="string">pdz</span> <span class="string">Kz</span>
+</pre><h2 id="2">Discrete System Requirement Poles</h2><p>Positive pole from system requirements (only need one for calculation)</p><pre class="codeinput">s_pole = -0.5+(sqrt(2)/8)*i;
+<span class="comment">% Sampling time</span>
+T = 0.25;
+<span class="comment">% Converting to z-domain</span>
+dscr_pole = exp(s_pole*T);
+<span class="comment">% Set the pole</span>
+z = dscr_pole;
+</pre><h2 id="3">System Parameters and Plant TF</h2><p>Discrete plant with hold circuit calcuated in Q1 part 2</p><pre class="codeinput">Gz = 3.1526e-05*(z+0.9917)/((z-1)*(z-0.9753)*(z-0.1353))
+</pre><pre class="codeoutput">
+Gz =
+
+   0.0049 + 0.0039i
+
+</pre><h2 id="4">Controller Form</h2><p>Set the zero as one of the poles of Gz (the discrete plant)</p><pre class="codeinput">zdz = -0.9753;
+<span class="comment">% Controller</span>
+Dz = Kz*(z+zdz)/(z+pdz)
+</pre><pre class="codeoutput"> 
+Dz =
+ 
+(Kz*(- 843657251375105/9007199254740992 + 5618838907420357i/144115188075855872))/(pdz + 992633022721723/1125899906842624 + 5618838907420357i/144115188075855872)
+ 
+</pre><h2 id="5">Insert Pole into Characteristic Equation</h2><p>Characteristic Equation</p><pre class="codeinput">CE = 1+Dz*Gz
+</pre><pre class="codeoutput"> 
+CE =
+ 
+(Kz*(- 3158698063891250008166159978217/5192296858534827628530496329220096 - 29813006920062204498176497726765i/166153499473114484112975882535043072))/(pdz + 992633022721723/1125899906842624 + 5618838907420357i/144115188075855872) + 1
+ 
+</pre><h2 id="6">Solve the Real and Imaginary Equations</h2><pre class="codeinput">S = solve([imag(CE) == 0, real(CE) == 0], [pdz, Kz])
+</pre><pre class="codeoutput">Warning: Cannot solve symbolically. Returning a numeric approximation instead. 
+
+S = 
+
+  struct with fields:
+
+    pdz: [1&times;1 sym]
+     Kz: [1&times;1 sym]
+
+</pre><h2 id="7">Solutions to controller pole and controller gain</h2><pre class="codeinput">S.Kz
+S.pdz
+</pre><pre class="codeoutput"> 
+ans =
+ 
+217.29040028254398271705662750991
+ 
+ 
+ans =
+ 
+-0.74944810970198069014676977012631
+ 
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Design controller in the z-domain
+
+%% Setup
+clear all;
+clc;
+close all;
+syms pdz Kz
+
+%% Discrete System Requirement Poles
+% Positive pole from system requirements (only need one for calculation)
+s_pole = -0.5+(sqrt(2)/8)*i;
+% Sampling time
+T = 0.25;
+% Converting to z-domain
+dscr_pole = exp(s_pole*T);
+% Set the pole
+z = dscr_pole;
+
+%% System Parameters and Plant TF
+% Discrete plant with hold circuit calcuated in Q1 part 2
+Gz = 3.1526e-05*(z+0.9917)/((z-1)*(z-0.9753)*(z-0.1353))
+
+
+%% Controller Form
+% Set the zero as one of the poles of Gz (the discrete plant)
+zdz = -0.9753;
+% Controller
+Dz = Kz*(z+zdz)/(z+pdz)
+
+%% Insert Pole into Characteristic Equation
+% Characteristic Equation
+CE = 1+Dz*Gz
+
+%% Solve the Real and Imaginary Equations
+S = solve([imag(CE) == 0, real(CE) == 0], [pdz, Kz])
+
+%% Solutions to controller pole and controller gain
+S.Kz
+S.pdz
+
+##### SOURCE END #####
+--></body></html>
