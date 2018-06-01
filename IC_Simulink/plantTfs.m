@@ -1,8 +1,8 @@
 %% Plant TF for IC Project 
 
 %% Setup
-T1_num = [3.9946];
-T1_den = [1 0.068 0 0];
+T1_num = [0.795];
+T1_den = [1 0.068 0];
 T2_num = [-5*9.8];
 T2_den = [7 0 0];
 T3_num = [5.43];
@@ -45,7 +45,7 @@ system_root = [pos_system_root, neg_system_root];
 
 %% Matching T1 Poles to Gc1 Zero
 T1_poles = pole(T1_tf);
-z_gc1 = subs(z_gc1, T1_poles(3));
+z_gc1 = subs(z_gc1, T1_poles(2));
 
 %% Removing one pole at 0 on T2 
 z_gc2 = subs(z_gc2, 0);
